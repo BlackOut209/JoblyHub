@@ -17,7 +17,7 @@ app.use(cors({
 // 🔹 Обязательно парсим JSON-тело
 app.use(express.json());
 
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 3000;
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
@@ -89,4 +89,5 @@ function escapeHtml(s = "") {
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`[server] listening on http://127.0.0.1:${PORT}`);
 });
+
 
